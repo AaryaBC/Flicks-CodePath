@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FlicksMovie/MoviesViewController.swift"
+            timestampString = "507439634.512713"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FlicksMovie.MoviesViewController.viewDidLoad () -&gt; ()"
+                  moduleName = "FlicksMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aaryabc/Documents/Assignements/Sophomore%20Spring/CodePath/Flicks-Movie-App/Flicks-CodePath/FlicksMovie/FlicksMovie/MoviesViewController.swift"
+                  timestampString = "507439173.039444"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1287">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FlicksMovie.MoviesViewController.(viewDidLoad () -&gt; ()).(closure #1)"
+                  moduleName = "FlicksMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aaryabc/Documents/Assignements/Sophomore%20Spring/CodePath/Flicks-Movie-App/Flicks-CodePath/FlicksMovie/FlicksMovie/MoviesViewController.swift"
+                  timestampString = "507439173.042925"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "845">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FlicksMovie/MoviesViewController.swift"
+            timestampString = "507439281.78602"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FlicksMovie/MoviesViewController.swift"
+            timestampString = "507439875.732395"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
