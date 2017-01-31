@@ -8,6 +8,7 @@
 
 import UIKit
 import AFNetworking
+import MBProgressHUD
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -16,6 +17,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Initialize a UIRefreshControl
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControlEvents.valueChanged)
+        // add refresh control to table view
+        tableView.insertSubview(refreshControl, at: 0)
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -23,18 +29,32 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+        MBProgressHUD.showAdded(to: self.view, animated: true)
         let task: URLSessionDataTask = session.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
+            MBProgressHUD.hide(for: self.view, animated: true)
             if let data = data {
                 if let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary {
                     print(dataDictionary)
                     self.movies = dataDictionary["results"] as? [NSDictionary]
                     self.tableView.reloadData()
+                    refreshControl.endRefreshing()
                 }
             }
         }
         task.resume()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func refreshControlAction(_ refreshControl: UIRefreshControl) {
+        
+        
+        // Reload the tableView now that there is new data
+        self.tableView.reloadData()
+        
+        // Tell the refreshControl to stop spinning
+        refreshControl.endRefreshing()
+        
     }
 
     override func didReceiveMemoryWarning() {
