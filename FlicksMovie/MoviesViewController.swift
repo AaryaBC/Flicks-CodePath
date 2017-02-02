@@ -9,7 +9,6 @@
 import UIKit
 import AFNetworking
 import MBProgressHUD
-import HCSStarRatingView
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     @IBOutlet weak var searchBar: UISearchBar!
@@ -85,7 +84,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let title = movie["title"] as! String
         let overview = movie["overview"] as! String
         let posterPath = movie["poster_path"] as! String
-        let rating = movie["vote_average"] as! CGFloat
+        
         let baseUrl = "https://image.tmdb.org/t/p/w500/"
         
         let imageUrl = NSURL(string: baseUrl + posterPath)
@@ -93,12 +92,27 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
         cell.posterView.setImageWith(imageUrl! as URL)
-        cell.voteCount.value = rating / 2
+        
 //        print("row \(indexPath.row)")
         return cell
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
+//        if searchText.isEmpty{
+//            searchList = movies
+//        } else {
+//            searchList = movies?.filter({(movie: NSDictionary)->Bool in
+//                if let title = movie["title"] as? String{
+//                    if title.range(of: searchText, options: .caseInsensitive) != nil {
+//                        return true
+//                    } else {
+//                        return false
+//                    }
+//                }
+//                return false
+//            })
+//        }
+//        tableView.reloadData()
         self.searchList = searchText.isEmpty ? movies : movies?.filter({(movie: NSDictionary) -> Bool in
             // If dataItem matches the searchText, return true to include it
             return (movie["title"] as? String)?.range(of: searchText, options: .caseInsensitive) != nil
@@ -114,8 +128,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         search.showsCancelButton = false
         search.text = ""
         search.resignFirstResponder()
-        self.searchList = self.movies
-        tableView.reloadData()
     }
     
     /*

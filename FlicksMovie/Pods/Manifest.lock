@@ -20,16 +20,19 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - HCSStarRatingView (1.4.5)
   - MBProgressHUD (1.0.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.0)
+  - HCSStarRatingView (~> 1.4.5)
   - MBProgressHUD (~> 1.0.0)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  HCSStarRatingView: bff3f89314d3b5013ce826ea11897d3129ff6b8c
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
 
-PODFILE CHECKSUM: 3d94bfc3c7d002a41b531745cd0e487fdeebf571
+PODFILE CHECKSUM: d7c11a263461b065e0927ee86048e3af6d090d32
 
 COCOAPODS: 1.1.1
