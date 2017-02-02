@@ -25,6 +25,7 @@ The following **additional** features are implemented:
 
 - [x] Added a cancel button to the search menu and it loads the default results once the user hits cancel
 - [x] Added a ratings view where the user can see the ratings of the movie in starts format.
+
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
 1. Using different views and switching over views from different controllers
@@ -34,7 +35,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='flicks.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='flicksmovie.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
