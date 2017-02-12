@@ -22,17 +22,20 @@ PODS:
     - AFNetworking/NSURLSession
   - HCSStarRatingView (1.4.5)
   - MBProgressHUD (1.0.0)
+  - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.0)
   - HCSStarRatingView (~> 1.4.5)
   - MBProgressHUD (~> 1.0.0)
+  - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   HCSStarRatingView: bff3f89314d3b5013ce826ea11897d3129ff6b8c
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: d7c11a263461b065e0927ee86048e3af6d090d32
+PODFILE CHECKSUM: e652cc4d335076a8a62e81f118e67fa8b924a6de
 
 COCOAPODS: 1.1.1
